@@ -1,0 +1,58 @@
+
+/* PAGE D'ACCUEIL */
+
+.intitulé /*correspond à tous les titre, police shrikland gras*/
+#selection /*correspond aux 3 boutons du bloc fonctionnement*/
+.text /* texte sur les boutons de sélections, police roboto, minuscule, gras, centré*/
+#btn_choix /* bouton générique avec des textes différents */
+
+
+
+
+/* PAGE MENU */
+
+#descriptif_plat /* CORRESPOND AUX BLOC ENTREES, PLATS, DESSERTS */
+#bloc_cat_plat /* CORRESPOND AUX INTITULES ENTREES, PLATS, DESSERTS */ /* majuscule, police shirkland, surligné 2/3 vert */
+#bloc_plat /* CORRESPOND AU CHAMPS DETAILLANT LE PLAT */ /* blanc, arrondi au 4 coins, marge gauche et droite, ombre légère */
+.bloc_choix /*bouton amovible sur champ vert qui s'active si la personne sélectionne le plat */
+#btn_choix /* bouton animé ne renvoyant sur aucune page, couleur #FF79DA */ /*titre générique car plusieurs bouton identique avec des textes différents*/
+
+@font-face /*charger la police applicable au site */
+{
+	font-family: 'roboto regular';
+	src: url('https://fr.allfont.net/download/roboto-regular/');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face /*charger la police applicable au site */
+{
+	font-family: 'shrikhand';
+	src: url('shrikhand.ttf'); 
+	font-style: normal;
+}
+$couleur_primaire
+{
+	color: #9356DC
+}
+$couleur_secondaire
+{
+	color: #FF79DA;
+}
+$couleur_tertiare
+{
+	color: #99E2D0;
+}
+@media all and (max-device-width: 480px)
+{
+
+#intitulé /* TITRE */
+{
+	font-weight: bold;
+	font-family: 'shrikhand';
+}
+.intitulé
+{
+	font-weight: bold;
+	font-family: 'roboto regular';
+}
