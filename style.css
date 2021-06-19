@@ -1,58 +1,132 @@
 
-/* PAGE D'ACCUEIL */
-
-.intitulé /*correspond à tous les titre, police shrikland gras*/
-#selection /*correspond aux 3 boutons du bloc fonctionnement*/
-.text /* texte sur les boutons de sélections, police roboto, minuscule, gras, centré*/
-#btn_choix /* bouton générique avec des textes différents */
-
-
-
-
-/* PAGE MENU */
-
-#descriptif_plat /* CORRESPOND AUX BLOC ENTREES, PLATS, DESSERTS */
-#bloc_cat_plat /* CORRESPOND AUX INTITULES ENTREES, PLATS, DESSERTS */ /* majuscule, police shirkland, surligné 2/3 vert */
-#bloc_plat /* CORRESPOND AU CHAMPS DETAILLANT LE PLAT */ /* blanc, arrondi au 4 coins, marge gauche et droite, ombre légère */
-.bloc_choix /*bouton amovible sur champ vert qui s'active si la personne sélectionne le plat */
-#btn_choix /* bouton animé ne renvoyant sur aucune page, couleur #FF79DA */ /*titre générique car plusieurs bouton identique avec des textes différents*/
-
 @font-face /*charger la police applicable au site */
 {
-	font-family: 'roboto regular';
-	src: url('https://fr.allfont.net/download/roboto-regular/');
+	font-family: 'roboto';
+	src: url('Roboto-Bold.ttf');
+	font-weight: normal;
+	font-style: bold;
+}
+@font-face /*charger la police applicable au site */
+{
+	font-family: 'roboto_normal';
+	src: url('Roboto-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face /*charger la police applicable au site */
 {
-	font-family: 'shrikhand';
-	src: url('shrikhand.ttf'); 
+	font-family: 'Shrikhand';
+	src: url('Shrikhand-Regular.ttf'); 
+	font-weight: normal;
 	font-style: normal;
 }
-$couleur_primaire
+@font-face /*charger la police applicable au site */
 {
-	color: #9356DC
-}
-$couleur_secondaire
-{
-	color: #FF79DA;
-}
-$couleur_tertiare
-{
-	color: #99E2D0;
+	font-family: 'roboto_bold_italic';
+	src: url('Roboto-BoldItalic.ttf'); 
+	font-weight: normal;
+	font-style: bold italic;
 }
 @media all and (max-device-width: 480px)
 {
 
-#intitulé /* TITRE */
+/* PAGE RESTAURANT PALETTE DU GOUT*/
+#palette_du_gout
 {
-	font-weight: bold;
-	font-family: 'shrikhand';
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.image img
+{
+	width: 100%;
+	height: 240px;
+	z-index: 1;
+}
+.détail_palette
+{
+	
+	border-radius: 20px 20px 0px 0px;
+	background-color: #F2F2F2;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	margin-top: -50px;
+}
+.intitulé_palette
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 5px;
+}
+.fa 
+{
+	font-size: 25px;
+	background-color: #F2F2F2;
+	margin-top: 8px;
 }
 .intitulé
 {
-	font-weight: bold;
-	font-family: 'roboto regular';
+	font-family:'Shrikhand';
+	font-size: 25px;
+}
+.descriptif_plats
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+
+}
+.bloc_plat
+{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px;
+	
+}
+.bloc_cat_plat
+{
+	margin-top: 10px;
+}
+.text_menu
+{
+	margin-left: 20px;
+	border-bottom: solid 3px #99E2D0;
+	border-bottom-width: 5px;
+	
+}
+
+.main_text
+{
+	font-family: 'roboto';
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 70%;
+}
+.text
+{
+	font-family: 'roboto_normal';
+	font-size: 12px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 70%;
+}
+.prix
+{
+	padding-top: 30px;
+	margin-left: 45px;
+	width: 10%;
 }
