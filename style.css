@@ -31,6 +31,85 @@
 {
 
 /*PAGE ACCUEIL*/
+
+/* NESTING SUR LES ICONES */
+
+.fa 
+{
+	font-weight: 10px
+	padding-bottom: 2px;
+	width: 10%;
+}
+.fa-wide
+{
+	font-size: 30px;
+	font-weight: 0;
+	margin-top: 15px;
+	padding-right: 5px;
+}
+
+
+/* NESTING SUR LES POLICES ET LES INTITULES */
+.intitule /* Titre des restaurants */
+{
+	font-family: 'Shrikhand';
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+/* Texte avec police ROBOTO (gras) et ROBOTO NORMAL */
+.intitulé /* Restaurants et fonctionnements */
+{
+	font-family:'Roboto';
+	font-size: 25px;
+}
+.main_text /* Textes principaux des plats et nom des restaurants */
+{
+	font-family: 'roboto';
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 70%;
+}
+.main_text-wide
+{
+	display: flex;
+	flex-direction: row wrap;
+	padding-top: 20px;
+	font-size: 20px;
+}
+.text /* Sous titres des plats et localisation des restaurants */
+{
+	font-family: 'roboto_normal';
+	font-size: 12px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 70%;
+}
+.text_menu
+{
+	margin-left: 20px;
+}
+/* TRAITEMENT DES ANCRES */
+a
+{
+	text-decoration: none;
+	color: black;
+}
+a-wide
+{
+	color: white;
+}
+
+
 #page_accueil
 {
 	margin-top: 20px;
@@ -56,11 +135,6 @@
 	width: 60%;
 	
 }
-.fa 
-{
-	font-weight: 10px
-	padding-bottom: 2px;
-}
 input
 {
 	width: 100%;
@@ -77,17 +151,7 @@ input
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding-bottom: 15px;
-	
 }
-.intitule_gras
-{
-	display: flex;
-	flex-direction: row wrap;
-	font-family: 'roboto';
-	padding-top: 20px;
-	font-size: 20px;
-}
-
 .btn_choix input
 {
 	font-family: 'roboto_normal';
@@ -117,7 +181,6 @@ input:hover
 	margin-bottom: 5px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px lightgrey;
-
 }
 .option
 {
@@ -133,6 +196,12 @@ input:hover
 	font-family: 'roboto';
 	z-index: 1;
 }
+.option-wide
+{
+	background-color: #D8BFD8;
+
+}
+
 .numero
 {
 	border-radius: 50%;
@@ -152,14 +221,7 @@ input:hover
 	height: 80%;
 	margin-bottom: 30px;
 }
-.intitule
-{
-	font-family: 'Shrikhand';
-	font-size: 20px;
-	margin-top: 20px;
-	margin-left: 15px;
-	margin-bottom: 10px;
-}
+
 .banniere
 {
 	display: flex;
@@ -205,28 +267,7 @@ input:hover
 	flex-direction: column;
 	width: 90%;
 }
-.fa 
-{
-	margin-top: 15px;
-}
-.pied
-{
-	display: flex;
-	flex-direction: column;
-	color: white;
-	background-color: black;
-	padding-bottom: 20px;
-}
-.sous_titre
-{
-	padding-top: 15px;
-}
-.proposer
-{
-	display: flex;
-	flex-direction: row;
-	margin-left: 10px;
-}
+
 
 
 /* PAGE RESTAURANT PALETTE DU GOUT*/
@@ -246,11 +287,10 @@ input:hover
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
-.fa
-{
-	width: 10%;
-}
+
 
 .logo
 {
@@ -285,25 +325,11 @@ input:hover
 	align-items: center;
 	margin-top: 5px;
 }
-.fa fa-heart
-{
-	font-size: 40px;
-	background-color: #F2F2F2;
-	font-family: 'roboto_normal';
-	font-weight: 0;
-	
-}
-.intitulé
-{
-	font-family:'Roboto';
-	font-size: 25px;
-}
 .descriptif_plats
 {
 	display: flex;
 	flex-direction: column;
-	margin-top: 5px;
-
+	margin-top: 25px;
 }
 .bloc_plat
 {
@@ -312,16 +338,12 @@ input:hover
 	background-color: white;
 	border-radius: 10px;
 	margin: 10px;
-	
 }
 .bloc_cat_plat /* Pour entrées, plats desserts */
 {
 	margin-top: 10px;
 }
-.text_menu
-{
-	margin-left: 20px;
-}
+
 .bande
 {
 	display: flex;
@@ -347,28 +369,6 @@ input:hover
 .nom_plat
 {
 	width: 90%;
-}
-.main_text
-{
-	font-family: 'roboto';
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-bottom: 5px;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	width: 70%;
-}
-.text
-{
-	font-family: 'roboto_normal';
-	font-size: 12px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	width: 70%;
 }
 .prix
 {
@@ -409,15 +409,18 @@ input:hover
 	margin-bottom: 10px;
 	width: 40%;
 }
+
 .fin_page
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	padding-left: 15px;
 	background-color: black;
 	color: white;
+	font-family: 'roboto_normal';
+	font-size: 13px;
 }
 .propos
 {
@@ -428,4 +431,8 @@ input:hover
 {
 	display: flex;
 	flex-direction: row;
+}
+.btn_contact a
+{
+	color: white;
 }
