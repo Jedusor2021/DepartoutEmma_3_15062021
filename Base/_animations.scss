@@ -1,17 +1,15 @@
-$descriptif_plats-delay: 3000ms;
+$prog-descriptif_plats-delay: 3000ms;
+$prog-descriptif_plats-dur: 3000ms;
 .descriptif_plats
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: nth($margin-top, 5);
-    animation: descriptif_plats 2000ms $descriptif_plats-delay;
+    &__descriptif_plats{
+        transform-origin: left;
+        transform: scaleX(0.5)
+        animation: descriptif_plats $prog-descriptif_plats-delay $prog-descriptif_plats-dur;
+        animation-fill-mode: both;
+        }
 }
 
-@keyframes descriptif_plats {
-    0% {
-        transform: translateX(-9999px)
-    }
-    100% {
-        transform: translateX(0)
-    }
-}
