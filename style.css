@@ -2,32 +2,34 @@
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'roboto';
-	src: url('Roboto-Bold.ttf');
+	src: url('Polices/Roboto-Bold.ttf');
 	font-weight: normal;
 	font-style: bold;
 }
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'roboto_normal';
-	src: url('Roboto-Regular.ttf');
+	src: url('Polices/Roboto-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'Shrikhand';
-	src: url('Shrikhand-Regular.ttf'); 
+	src: url('Polices/Shrikhand-Regular.ttf'); 
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'roboto_bold_italic';
-	src: url('Roboto-BoldItalic.ttf'); 
+	src: url('Polices/Roboto-BoldItalic.ttf'); 
 	font-weight: normal;
 	font-style: bold italic;
 }
-@media all and (max-device-width: 480px)
+
+
+@media all and (max-width: 480px)
 {
 
 /*PAGE ACCUEIL*/
@@ -36,16 +38,17 @@
 
 .fa 
 {
-	font-weight: 10px
+	font-weight: 10px;
 	padding-bottom: 2px;
 	width: 10%;
+
+}	
+.fa-wide {
+		font-size: 30px;
+		font-weight: 0;
+		margin-top: 15px;
+		padding-right: 5px;
 }
-.fa-wide
-{
-	font-size: 30px;
-	font-weight: 0;
-	margin-top: 15px;
-	padding-right: 5px;
 }
 
 
@@ -76,13 +79,15 @@
 	white-space: nowrap;
 	width: 70%;
 }
-.main_text-wide
+
+.main_text-wide 
 {
-	display: flex;
-	flex-direction: row wrap;
-	padding-top: 20px;
-	font-size: 20px;
+		display: flex;
+		flex-direction: row wrap;
+		padding-top: 20px;
+		font-size: 20px;
 }
+
 .text /* Sous titres des plats et localisation des restaurants */
 {
 	font-family: 'roboto_normal';
@@ -94,19 +99,20 @@
 	white-space: nowrap;
 	width: 70%;
 }
-.text_menu
-{
+.text_menu {
 	margin-left: 20px;
 }
+
+
 /* TRAITEMENT DES ANCRES */
 a
 {
 	text-decoration: none;
-	color: black;
-}
-a-wide
-{
-	color: white;
+	color: #000000;
+
+}	
+a-wide {
+		color: #FFFFFF;
 }
 
 
@@ -119,6 +125,11 @@ a-wide
 {
 	display: flex;
 	justify-content: center;
+	
+}
+.logo_accueil img
+{
+	font-size: 20px;
 }
 .rechercher
 {
@@ -152,20 +163,19 @@ input
 	margin-bottom: 5px;
 	padding-bottom: 15px;
 }
-.btn_choix input
-{
+.btn_choix input {
+	background: #FF79DA;
+	color: #FFFFFF;
 	font-family: 'roboto_normal';
-	color: white;
-	background-color: #FF79DA;
 	border-radius: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 30px;
+	transform: opacity(1);
+	transition: transform 1000ms;
 }
-input:hover
-{
-	background-color: lightpink;
-}
+
+
 .fonctionnement
 {
 	display: flex;
@@ -247,7 +257,7 @@ input:hover
 	height: 25%;
 
 }
-.restaurant_choix img
+.restaurant_choix img /* object-fit: cover; ne se met que dans les images */
 {
 	border-radius: 10px 10px 0px 0px;
 	height: 130px;
@@ -278,7 +288,6 @@ input:hover
 	position: relative;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	background-color: #F2F2F2;
 }
 .entete
@@ -290,8 +299,6 @@ input:hover
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
-
 .logo
 {
 	margin-right: 40px;
@@ -361,11 +368,7 @@ input:hover
 {
 	width: 80%;
 }
-.bloc_plat
-{
-	display: flex;
-	flex-direction: row;
-}
+
 .nom_plat
 {
 	width: 90%;
@@ -381,17 +384,10 @@ input:hover
 {
 	border-radius: 20px;
 	width: 45px;
-	background-color: ##FF79DA;
+	background-color: #FF79DA;
 	
 }
-.pied_menu
-{
-	display: flex;
-	flex-direction: column;
-	color: white;
-	background-color: black;
-	padding-bottom: 20px;
-}
+
 .btn_cde
 {
 	display: flex;
@@ -436,3 +432,10 @@ input:hover
 {
 	color: white;
 }
+
+
+
+
+
+
+
