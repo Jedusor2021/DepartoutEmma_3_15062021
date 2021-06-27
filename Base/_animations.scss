@@ -13,4 +13,37 @@ $prog-descriptif_plats-dur: 3000ms;
         }
 }
 
+/*Animation du loading spinner page d'accueil*/
+$cd-bars: $cr3-color;
+$size: 3vh;
+$anim-dur: 2000ms;
+$num-bars: 5;
+$anim-delay: $anim-dur / $num-bars;
+
+.load {
+	width: $size*10;
+	height: $size*7.5;
+	display: flex;
+	justify-content: space-evenly;
+	&__bar {
+		background-color: $cr3-color;
+		height: 100%;
+		width: $size;
+        animation: bars $anim-dur backwards;
+        @for $i from 1 through 5 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+	}
+}
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
 

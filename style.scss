@@ -12,43 +12,12 @@
 @import "./Base/font_face"; /* Police*/
 @import "./Pages/restaurants_et_footer"; /* bloc page accueil restaurants*/
 @import "./Base/animations";
-
+@import "./Base/poubelle";
 @media all and (max-device-width: 480px)
 {
 
-#page_accueil
-{
-	margin-top: nth($margin-top, 4);
-	margin-bottom: nth($margin-bottom, 6);
 }
 
-
-
-
-
-.fonctionnement
-{
-	display: flex;
-	flex-direction: column;
-	margin-top: nth($margin-top, 2);
-	margin-bottom: nth($margin-bottom, 2);
-}
-
-
-
-
-
-/* PAGE RESTAURANT PALETTE DU GOUT*/
-#palette_du_gout
-{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background-color: $cr6-color;
-}
-}
 
 
 
