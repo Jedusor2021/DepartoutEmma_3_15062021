@@ -1,0 +1,49 @@
+.bloc_plat
+{
+	display: flex;
+	flex-direction: row;
+	background-color: $cr4-color;
+	border-radius: $border-radius1;
+	margin: 10px;
+}
+.nom_plat
+{
+	width: 90%;
+}
+.prix
+{
+	display: flex;
+	flex-direction: row;
+	width: 10%;
+	margin-top: nth($margin-top, 7);
+}.main_text /* Textes principaux des plats et nom des restaurants */
+{
+	font-family: 'roboto';
+	padding-top: nth($padding-top, 5);
+	padding-left: nth($padding-left, 5);
+	padding-bottom: nth($padding-bottom, 4);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 70%;
+	.main_text-wide {
+		display: flex;
+		flex-direction: row wrap;
+		padding-top: nth($padding-top, 7);
+		font-size: 20px;
+}
+}
+.text /* Sous titres des plats et localisation des restaurants */
+{
+	font-family: 'roboto_normal';
+	font-size: 12px;
+	padding-bottom: nth($padding-bottom, 5);
+	padding-left: nth($padding-left, 5);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 70%;
+	.text_menu {
+	margin-left: nth($margin-left, 4);
+}
+}

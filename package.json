@@ -1,0 +1,25 @@
+{
+  "name": "projet3ohmyfood",
+  "version": "1.0.0",
+  "description": "\"projet de site de restaurant\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    "sass --watch ./sass/main.scss:.public/css/style.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jedusor2021/DepartoutEmma_3_15062021.git"
+  },
+  "keywords": [
+    "responsive"
+  ],
+  "author": "Emma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jedusor2021/DepartoutEmma_3_15062021/issues"
+  },
+  "homepage": "https://github.com/Jedusor2021/DepartoutEmma_3_15062021#readme"
+}
+

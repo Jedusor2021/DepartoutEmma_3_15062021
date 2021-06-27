@@ -1,0 +1,32 @@
+.détail_palette
+{
+	border-radius: $border-radius6;
+	background-color: $cr6-color;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	margin-top: -50px;
+}
+.intitulé_palette
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: nth($margin-top, 1);
+}
+.intitule /* Titre des restaurants */
+{
+	font-family: 'Shrikhand';
+	font-size: 30px;
+	margin-top: nth($margin-top, 4);
+	margin-left: nth($margin-left, 3);
+	margin-bottom: nth($margin-bottom, 2);
+}
+
+/* Texte avec police ROBOTO (gras) et ROBOTO NORMAL */
+.intitulé /* Restaurants et fonctionnements */
+{
+	font-family:'Roboto';
+	font-size: 25px;
+}

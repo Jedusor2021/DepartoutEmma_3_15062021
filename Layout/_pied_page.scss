@@ -1,0 +1,26 @@
+.fin_page
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: nth($margin-top, 4);
+	padding-bottom: nth($margin-bottom, 6);
+	padding-left: nth($padding-left, 6);
+	background-color: $cr5-color;
+	color: $cr4-color;
+	font-family: 'roboto_normal';
+	font-size: 13px;
+}
+.propos
+{
+	display: flex;
+	flex-direction: row;
+}
+.part
+{
+	display: flex;
+	flex-direction: row;
+}
+.btn_contact a
+{
+	color: $cr4-color;
+}
