@@ -1,4 +1,13 @@
-@keyframes bloc_plat {
+$descriptif_plat-delay: 3000ms;
+.descriptif_plats
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: nth($margin-top, 5);
+    animation: descriptif_plat 0ms $descriptif_plat-delay;
+}
+
+@keyframes descriptif_plat {
     0% {
         transform: translateX(-9999px)
     }
