@@ -1,0 +1,54 @@
+.restaurants_et_footer
+{
+	display: flex;
+	flex-direction: column;
+	background-color: $cr6-color;
+	margin-top: nth($margin-top, 3);
+	height: 80%;
+	margin-bottom: nth($margin-bottom, 6);
+}
+.banniere
+{
+	display: flex;
+	
+	background-color: $cr3-color;
+	justify-content: center;
+	color: green;
+	z-index: 2;
+	width: 25%;
+	margin-bottom: -30px;
+	margin-left: 230px;
+}
+.restaurant_choix
+{
+	display: flex;
+	flex-direction: column;
+	border-radius: $border-radius1;
+	margin-left: nth($margin-left, 3);
+	margin-right: nth($margin-right, 3);
+	background-color: $cr4-color;
+	margin-top: nth($margin-top, 2);
+	margin-bottom: nth($margin-bottom, 2);
+	height: 25%;
+
+}
+.restaurant_choix img /* object-fit: cover; ne se met que dans les images */
+{
+	border-radius: $border-radius6;
+	height: 130px;
+	object-fit: cover;
+	z-index: 1;
+}
+.commentaire
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.nom
+{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}

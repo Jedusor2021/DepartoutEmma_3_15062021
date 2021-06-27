@@ -22,3 +22,27 @@
 	background-color: $cr2-color;
 	
 }
+.description
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #F2F2F2;
+	margin-top: nth($margin-top, 1);
+	margin-bottom: nth($margin-bottom, 1);
+	padding-bottom: nth(padding-bottom, 6);
+}
+.btn_choix {
+	background: #FF79DA;
+	color: #FFFFFF;
+	font-family: 'roboto_normal';
+	border-radius: $border-radius3;
+	margin-top:nth($margin-top, 2);
+	margin-bottom: nth($margin-bottom, 2);
+	margin-right: nth($margin-right, 3);
+	transform: opacity(1);
+	transition: transform 1000ms;
+	&:hover{
+		transform: opacity(0,5)
+	}
+}

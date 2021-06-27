@@ -1,0 +1,38 @@
+.selection
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: nth($margin-top, 1);
+	margin-bottom: nth($margin-bottom, 1);
+	border-radius: $border-radius3;
+	box-shadow: 5px 5px 5px lightgrey;
+}
+.option
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: $cr6-color;
+	width: 100%;
+	height: 35px;
+	border-radius: $border-radius1;
+	margin-left: -10px;
+	padding-top: nth($padding-top, 7);
+	font-family: 'roboto';
+	z-index: 1;
+}
+.option-wide
+{
+	background-color: #D8BFD8;
+
+}
+.numero
+{
+	border-radius: $border-radius4;
+	background-color: $cr1-color;
+	padding: 8px;
+	margin-bottom: nth($padding-bottom, 2);
+	height: 15px;
+	z-index: 2;
+	margin-top: nth($margin-top, 1);
+}

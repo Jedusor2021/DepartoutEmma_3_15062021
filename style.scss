@@ -8,100 +8,22 @@
 @import "./Layout/entete"; /* logo commun aux 4 pages menus */
 @import "./Composants/fa"; /* icone */
 @import "./Composants/a"; /* ancres */
-
-@font-face /*charger la police applicable au site */
-{
-	font-family: 'roboto';
-	src: url('Roboto-Bold.ttf');
-	font-weight: normal;
-	font-style: bold;
-}
-@font-face /*charger la police applicable au site */
-{
-	font-family: 'roboto_normal';
-	src: url('Roboto-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face /*charger la police applicable au site */
-{
-	font-family: 'Shrikhand';
-	src: url('Shrikhand-Regular.ttf'); 
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face /*charger la police applicable au site */
-{
-	font-family: 'roboto_bold_italic';
-	src: url('Roboto-BoldItalic.ttf'); 
-	font-weight: normal;
-	font-style: bold italic;
-}
-
-
+@import "./Layout/selection"; /* Bloc fonctionnement page d'accueil*/
+@import "./Base/font_face"; /* Police*/
+@import "./Pages/restaurants_et_footer"; /* bloc page accueil restaurants*/
 
 @media all and (max-device-width: 480px)
 {
-
-
 
 #page_accueil
 {
 	margin-top: nth($margin-top, 4);
 	margin-bottom: nth($margin-bottom, 6);
 }
-.logo_accueil
-{
-	display: flex;
-	justify-content: center;
-	font-size: 20px;
-}
-.rechercher
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background-color: #F2F2F2;
-	margin-top: nth($margin-top, 2);
-	width: 100%;
-}
-.zone_recherche 
-{
-	width: 60%;
-	
-}
-input
-{
-	width: 100%;
-	background-color: #F2F2F2;
-	height: 30px;
-	border: none;
-}
-.description
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #F2F2F2;
-	margin-top: nth($margin-top, 1);
-	margin-bottom: nth($margin-bottom, 1);
-	padding-bottom: nth(padding-bottom, 6);
-}
-.btn_choix {
-	background: #FF79DA;
-	color: #FFFFFF;
-	font-family: 'roboto_normal';
-	border-radius: $border-radius3;
-	margin-top:nth($margin-top, 2);
-	margin-bottom: nth($margin-bottom, 2);
-	margin-right: nth($margin-right, 3);
-	transform: opacity(1);
-	transition: transform 1000ms;
-	&:hover{
-		transform: opacity(0,5)
-	}
-}
+
+
+
+
 
 .fonctionnement
 {
@@ -110,100 +32,8 @@ input
 	margin-top: nth($margin-top, 2);
 	margin-bottom: nth($margin-bottom, 2);
 }
-.selection
-{
-	display: flex;
-	flex-direction: row;
-	margin-top: nth($margin-top, 1);
-	margin-bottom: nth($margin-bottom, 1);
-	border-radius: $border-radius3;
-	box-shadow: 5px 5px 5px lightgrey;
-}
-.option
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background-color: $cr6-color;
-	width: 100%;
-	height: 35px;
-	border-radius: $border-radius1;
-	margin-left: -10px;
-	padding-top: nth($padding-top, 7);
-	font-family: 'roboto';
-	z-index: 1;
-}
-.option-wide
-{
-	background-color: #D8BFD8;
 
-}
 
-.numero
-{
-	border-radius: $border-radius4;
-	background-color: $cr1-color;
-	padding: 8px;
-	margin-bottom: nth($padding-bottom, 2);
-	height: 15px;
-	z-index: 2;
-	margin-top: nth($margin-top, 1);
-}
-.restaurants_et_footer
-{
-	display: flex;
-	flex-direction: column;
-	background-color: $cr6-color;
-	margin-top: nth($margin-top, 3);
-	height: 80%;
-	margin-bottom: nth($margin-bottom, 6);
-}
-
-.banniere
-{
-	display: flex;
-	
-	background-color: $cr3-color;
-	justify-content: center;
-	color: green;
-	z-index: 2;
-	width: 25%;
-	margin-bottom: -30px;
-	margin-left: 230px;
-}
-.restaurant_choix
-{
-	display: flex;
-	flex-direction: column;
-	border-radius: $border-radius1;
-	margin-left: nth($margin-left, 3);
-	margin-right: nth($margin-right, 3);
-	background-color: $cr4-color;
-	margin-top: nth($margin-top, 2);
-	margin-bottom: nth($margin-bottom, 2);
-	height: 25%;
-
-}
-.restaurant_choix img /* object-fit: cover; ne se met que dans les images */
-{
-	border-radius: $border-radius6;
-	height: 130px;
-	object-fit: cover;
-	z-index: 1;
-}
-.commentaire
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
-}
-.nom
-{
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-}
 
 
 

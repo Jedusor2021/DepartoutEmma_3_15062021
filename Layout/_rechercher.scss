@@ -1,0 +1,21 @@
+.rechercher
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: $cr4-color;
+	margin-top: nth($margin-top, 2);
+	width: 100%;
+}
+.zone_recherche 
+{
+	width: 60%;
+}
+input
+{
+	width: 100%;
+	background-color: $cr4-color;
+	height: 30px;
+	border: none;
+}
