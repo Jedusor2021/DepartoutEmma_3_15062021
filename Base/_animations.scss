@@ -1,13 +1,13 @@
-$descriptif_plat-delay: 3000ms;
+$descriptif_plats-delay: 3000ms;
 .descriptif_plats
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: nth($margin-top, 5);
-    animation: descriptif_plat 0ms $descriptif_plat-delay;
+    animation: descriptif_plats 2000ms $descriptif_plats-delay;
 }
 
-@keyframes descriptif_plat {
+@keyframes descriptif_plats {
     0% {
         transform: translateX(-9999px)
     }
