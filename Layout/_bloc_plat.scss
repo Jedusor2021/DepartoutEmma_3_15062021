@@ -1,3 +1,4 @@
+$bloc_plat-delay: 1000ms;
 .bloc_plat
 {
 	display: flex;
@@ -5,6 +6,7 @@
 	background-color: $cr4-color;
 	border-radius: $border-radius1;
 	margin: 10px;
+	animation: bloc_plat 0s $bloc_plat-delay;
 }
 .nom_plat
 {
