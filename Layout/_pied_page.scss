@@ -9,18 +9,11 @@
 	color: $cr4-color;
 	font-family: 'roboto_normal';
 	font-size: 13px;
+	.propos {
+		display: flex;
+		flex-direction: row;
 }
-.propos
-{
-	display: flex;
-	flex-direction: row;
 }
-.part
-{
-	display: flex;
-	flex-direction: row;
-}
-.btn_contact a
-{
-	color: $cr4-color;
-}
+
+
+
