@@ -1,10 +1,14 @@
-/* Error: $n: Invalid index 7 for a list with 6 elements.
- *    ,
- * 14 |             margin-top: nth($margin-top, 7);
- *    |                         ^^^^^^^^^^^^^^^^^^^
- *    '
- *   Layout\_bloc_plat.scss 14:16  @import
- *   style.scss 6:9                root stylesheet */
+/* Error: Only 1 argument allowed, but 2 were passed.
+ *   ,--> Composants\_btn_cde.scss
+ * 46|         transform: opacity(0,5)
+ *   |                    ^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> sass:color
+ * 1 | @function opacity($color) {
+ *   |           =============== declaration
+ *   '
+ *   Composants\_btn_cde.scss 46:14  @import
+ *   style.scss 7:9                  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +18,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: $n: Invalid index 7 for a list with 6 elements.\a    \2577 \a 14 \2502              margin-top: nth($margin-top, 7);\d\a    \2502                          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   Layout\\_bloc_plat.scss 14:16  @import\a   style.scss 6:9                root stylesheet";
+  content: "Error: Only 1 argument allowed, but 2 were passed.\a   \250c \2500 \2500 > Composants\\_btn_cde.scss\a 46\2502          transform: opacity(0,5)\d\a   \2502                     ^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:color\a 1 \2502  @function opacity($color) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   Composants\\_btn_cde.scss 46:14  @import\a   style.scss 7:9                  root stylesheet";
 }

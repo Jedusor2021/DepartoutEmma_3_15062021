@@ -30,7 +30,7 @@
 	background-color: #F2F2F2;
 	margin-top: nth($margin-top, 1);
 	margin-bottom: nth($margin-bottom, 1);
-	padding-bottom: nth(padding-bottom, 6);
+	padding-bottom: nth($padding-bottom, 6);
 }
 .btn_choix {
 	background: #FF79DA;
