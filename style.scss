@@ -1,21 +1,21 @@
 @import "./Base/border";  
 @import "./Base/color";
 @import "./Base/margin";
-@import "./Layout/fin_page"; /* Bloc footer commun aux 5 pages*/
-@import "./Layout/bloc_cat_plat"; /* ENTREES, PLATS et DESSERTS dans page menu */
-@import "./Layout/bloc_plat"; /* Descriptif des plats commun aux 4 pages menu */
+@import "./Base/font-face"; /* Police*/
+@import "./Base/poubelle";
 @import "./Composants/btn_cde"; /* Bouton bas tte page commander */
-@import "./Layout/entete"; /* logo commun aux 4 pages menus */
 @import "./Composants/fa"; /* icone */
 @import "./Composants/a"; /* ancres */
 @import "./Composants/logo_accueil";
 @import "./Layout/description";
 @import "./Layout/selection"; /* Bloc fonctionnement page d'accueil*/
-@import "./Base/font_face"; /* Police*/
-@import "./Pages/restaurants_et_footer"; /* bloc page accueil restaurants*/
-@import "./Base/poubelle";
 @import "./Layout/rechercher";
 @import "./Layout/selection";
+@import "./Layout/entete"; /* logo commun aux 4 pages menus */
+@import "./Layout/fin_page"; /* Bloc footer commun aux 5 pages*/
+@import "./Layout/bloc_cat_plat"; /* ENTREES, PLATS et DESSERTS dans page menu */
+@import "./Layout/bloc_plat"; /* Descriptif des plats commun aux 4 pages menu */
+@import "./Pages/restaurants_et_footer"; 
 @media all and (max-device-width: 480px)
 {}
 
