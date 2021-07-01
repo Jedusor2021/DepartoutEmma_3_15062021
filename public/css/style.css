@@ -25,12 +25,10 @@
 }
 /* Police*/
 .btn_cde {
-  transform: scale(1);
+  background-color: #99E2D0;
 }
 .btn_cde:hover {
-  transform: scale(1.2);
-  transition-property: transform;
-  transition-duration: 400ms;
+  background-color: #F9CFF7;
 }
 
 #page_accueil {
@@ -157,7 +155,7 @@
 }
 
 /* Bouton bas tte page commander */
-.fa, .fas {
+.fa {
   font-weight: 1;
   padding-bottom: 5px;
   width: 10%;
