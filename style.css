@@ -255,7 +255,14 @@ a a-wide {
           box-shadow: 5px 5px 5px lightgrey;
 }
 
-.selection .option {
+.option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -269,11 +276,11 @@ a a-wide {
   z-index: 1;
 }
 
-.selection .option-wide {
+.option-wide {
   background-color: #D8BFD8;
 }
 
-.selection .numero {
+.numero {
   border-radius: 50%;
   background-color: #9356DC;
   padding: 8px;

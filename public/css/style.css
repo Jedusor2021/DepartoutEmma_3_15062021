@@ -184,7 +184,10 @@ a a-wide {
   border-radius: 30px;
   box-shadow: 5px 5px 5px lightgrey;
 }
-.selection .option {
+
+.option {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #F2F2F2;
   width: 100%;
@@ -195,10 +198,12 @@ a a-wide {
   font-family: "roboto";
   z-index: 1;
 }
-.selection .option-wide {
+
+.option-wide {
   background-color: #D8BFD8;
 }
-.selection .numero {
+
+.numero {
   border-radius: 50%;
   background-color: #9356DC;
   padding: 8px;
