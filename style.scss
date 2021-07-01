@@ -1,7 +1,7 @@
 @import "./Base/border";  
 @import "./Base/color";
 @import "./Base/margin";
-@import "./Layout/pied_page"; /* Bloc footer commun aux 5 pages*/
+@import "./Layout/fin_page"; /* Bloc footer commun aux 5 pages*/
 @import "./Layout/bloc_cat_plat"; /* ENTREES, PLATS et DESSERTS dans page menu */
 @import "./Layout/bloc_plat"; /* Descriptif des plats commun aux 4 pages menu */
 @import "./Composants/btn_cde"; /* Bouton bas tte page commander */
@@ -14,8 +14,7 @@
 @import "./Base/animations";
 @import "./Base/poubelle";
 @media all and (max-device-width: 480px)
-{
-}
+{}
 
 
 

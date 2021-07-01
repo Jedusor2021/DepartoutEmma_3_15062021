@@ -24,9 +24,9 @@
 		border-radius: $border-radius4;
 		background-color: $cr1-color;
 		padding: 8px;
-		margin-bottom: nth($padding-bottom, 2);
+		margin-bottom: 2px;
 		height: 15px;
 		z-index: 2;
-		margin-top: nth($margin-top, 1);
+		margin-top: nth($margin-top, 2);
 	}
 	}

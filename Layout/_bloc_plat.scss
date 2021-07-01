@@ -11,7 +11,7 @@
 			display: flex;
 			flex-direction: row;
 			width: 10%;
-			margin-top: nth($margin-top, 5);
+			margin-top: nth($margin-top, 7);
 		}
 		.main_text {
 			font-family: 'roboto';
@@ -43,6 +43,6 @@
 	white-space: nowrap;
 	width: 70%;
 	.text_menu {
-	margin-left: nth($margin-left, 4);
+		margin-left: nth($margin-left, 4);
 }
 }
