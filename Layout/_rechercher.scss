@@ -1,3 +1,9 @@
+.presentation
+{
+	display: flex;
+	flex-direction: column;
+	background-color: $cr6-color;
+}
 .rechercher
 {
 	display: flex;
@@ -10,7 +16,7 @@
 }
 .zone_recherche
  {
-	width: 60%;
+	width: 50%;
 }
 
 .input

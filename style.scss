@@ -8,10 +8,13 @@
 @import "./Layout/entete"; /* logo commun aux 4 pages menus */
 @import "./Composants/fa"; /* icone */
 @import "./Composants/a"; /* ancres */
+@import "./Composants/logo_accueil";
 @import "./Layout/selection"; /* Bloc fonctionnement page d'accueil*/
 @import "./Base/font_face"; /* Police*/
 @import "./Pages/restaurants_et_footer"; /* bloc page accueil restaurants*/
 @import "./Base/poubelle";
+@import "./Layout/rechercher";
+@import "./Layout/selection";
 @media all and (max-device-width: 480px)
 {}
 
