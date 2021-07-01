@@ -1,0 +1,10 @@
+.description
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cr6-color;
+    margin-top: nth($margin-top, 2);
+    margin-bottom: nth($margin-bottom, 2);
+    padding-bottom: nth($padding-bottom, 6);
+}

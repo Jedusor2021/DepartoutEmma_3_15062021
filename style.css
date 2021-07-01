@@ -250,6 +250,23 @@ a a-wide {
   font-size: 20px;
 }
 
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
 .selection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +491,7 @@ a a-wide {
 
 .zone_recherche {
   width: 50%;
+  background-color: #F2F2F2;
 }
 
 .input {

@@ -182,6 +182,16 @@ a a-wide {
   font-size: 20px;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
 .selection {
   display: flex;
   flex-direction: row;
@@ -338,6 +348,7 @@ a a-wide {
 
 .zone_recherche {
   width: 50%;
+  background-color: #F2F2F2;
 }
 
 .input {
