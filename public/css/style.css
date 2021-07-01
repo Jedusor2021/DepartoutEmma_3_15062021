@@ -287,55 +287,6 @@ a a-wide {
 }
 
 /* bloc page accueil restaurants*/
-.descriptif_plats {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-}
-.descriptif_plats__descriptif_plats {
-  transform-origin: left;
-  transform: scaleX(0.5);
-  animation: descriptif_plats 3000ms 3000ms;
-  animation-fill-mode: both;
-}
-
-/*Animation du loading spinner page d'accueil*/
-.load {
-  width: 30vh;
-  height: 22.5vh;
-  display: flex;
-  justify-content: space-evenly;
-}
-.load__bar {
-  background-color: #99E2D0;
-  height: 100%;
-  width: 3vh;
-  animation: bars 2000ms backwards;
-}
-.load__bar--1 {
-  animation-delay: 400ms;
-}
-.load__bar--2 {
-  animation-delay: 800ms;
-}
-.load__bar--3 {
-  animation-delay: 1200ms;
-}
-.load__bar--4 {
-  animation-delay: 1600ms;
-}
-.load__bar--5 {
-  animation-delay: 2000ms;
-}
-
-@keyframes bars {
-  0% {
-    transform: scaleY(0.5);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
 #page_accueil {
   margin-top: 20px;
   margin-bottom: 30px;
