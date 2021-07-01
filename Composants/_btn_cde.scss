@@ -32,14 +32,19 @@
 	margin-bottom: nth($margin-bottom, 1);
 	padding-bottom: nth($padding-bottom, 6);
 }
-.btn_choix {
-	background: #FF79DA;
+.btn_choix input
+{
+	background: $cr2-color;
 	color: $cr4-color;
 	font-family: 'roboto_normal';
 	border-radius: $border-radius3;
 	margin-top:nth($margin-top, 2);
 	margin-bottom: nth($margin-bottom, 2);
 	margin-right: nth($margin-right, 6);
+	padding-right: nth($padding-right, 6);
+	padding-left: nth($padding-left, 6);
+	padding-top: nth($padding-top, 3);
+	padding-bottom: nth($padding-bottom, 3);
 }
 
 .btn_contact a

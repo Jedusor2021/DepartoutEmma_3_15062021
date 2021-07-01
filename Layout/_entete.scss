@@ -6,10 +6,11 @@
 	width: 100%;
 	padding-top: nth($padding-top, 7);
 	padding-bottom: nth($padding-bottom, 7);
-	.logo {
+}
+.logo {
 		margin-right: nth($margin-right, 7);
 	}
-}
+
 .logo image {
 	width: 80%;
 	justify-content: center;
