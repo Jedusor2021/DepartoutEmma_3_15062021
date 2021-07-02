@@ -1,23 +1,24 @@
 
 /* Loader page d'accueil*/
+$animation-delay: 5000ms;
+$animation-dur: 150ms;
 .chargement {
     width: 100px;
-    height: 100px;
+    height: 200px;
     border: 20px solid $cr3-color;
-    border-top: 20px solid $cr2-color;
-    border-radius: 50%;
+    border-top: 20px solid $cr1-color;
+    border-bottom: 20px solid $cr2-color;
     margin: auto;
     position: absolute;
-    top: 0; left:0; right: 0; bottom: 0;
-    -o-animation: spin 3s linear 3000ms;
-    -webkit-animation: spin 3s linear 3000ms;
-    animation: spin 3s linear 3000ms;
-}
-@-webkit-keyframes spin {
-    0% {-webkit-transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(360deg);}
+    top: 0; bottom: 0; left: 0; right: 0;
+    animation: spin 1s linear $animation-delay;
+    transform: scaleX(0);
 }
 @keyframes spin {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

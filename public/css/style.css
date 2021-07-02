@@ -27,29 +27,20 @@
 /* Loader page d'accueil*/
 .chargement {
   width: 100px;
-  height: 100px;
+  height: 200px;
   border: 20px solid #99E2D0;
-  border-top: 20px solid #FF79DA;
-  border-radius: 50%;
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
   margin: auto;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  -o-animation: spin 3s linear 3000ms;
-  -webkit-animation: spin 3s linear 3000ms;
-  animation: spin 3s linear 3000ms;
+  animation: spin 1s linear 5000ms;
+  transform: scaleX(0);
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -213,9 +204,20 @@ a a-wide {
 }
 
 #page_accueil {
-  display: none;
+  position: absolute;
+  overflow: hidden;
+  animation: page_accueil 4001ms 5000ms;
 }
 
+@keyframes page_accueil {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*loader*/
 .description {
   display: flex;
   flex-direction: column;

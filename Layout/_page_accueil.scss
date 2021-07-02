@@ -1,5 +1,16 @@
+
 #page_accueil
-{
-    display: none;
-    
+{ 
+   position: absolute;
+   overflow: hidden;
+   animation: page_accueil 4001ms 5000ms;
 }
+@keyframes page_accueil {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
