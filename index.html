@@ -2,23 +2,27 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="public/css/style.css" />
 		<title>Ohmyfood</title>
 		<script src="https://kit.fontawesome.com/a47b4b2a04.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="animations.scss">
+		<title>loader</title>
 	</head>
 
 	<body>
+		<div class="chargement"></div>
 		<div id="page_accueil">
-		<div class="container">
-			<div class="load">
-				<div class="load__bar load__bar--1"></div>
-				<div class="load__bar load__bar--2"></div>
-				<div class="load__bar load__bar--3"></div>
-				<div class="load__bar load__bar--4"></div>
-				<div class="load__bar load__bar--5"></div>
-			</div>
-		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function)(){
+				$(".chargement").fadeOut(5000, function(){
+					$(".page_accueil").fadeIn(1000);
+				}
+			}
+
+
+
 		<header>
 			<div class="logo_accueil"><img src="Image/ohmyfood@2x.svg" alt="logo_ohmyfood"></div>
 
@@ -73,7 +77,7 @@
 							<div class="main_text">La palette du goût</div>
 							<div class="text">Ménilmontant</div>
 						</div>
-						<div class="fa fa-wide fa-heart"></div>
+						<div class="fa fa-wide fa-heart"><div class="fa__bg"></div></div>
 					</div>
 				</div></a></a>
 
