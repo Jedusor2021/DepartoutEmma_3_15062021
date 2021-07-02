@@ -24,11 +24,25 @@
   font-style: bold italic;
 }
 /* Police*/
-.btn_cde {
-  background-color: #99E2D0;
+.btn_cde input {
+  position: relative;
+  z-index: 1;
 }
-.btn_cde:hover {
-  background-color: #F9CFF7;
+.btn_cde input:hover .btn_bg input {
+  opacity: 0.4;
+}
+
+.btn_bg input {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: O;
+  left: 0;
+  bottom: 0;
+  background-color: #ff60d3;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
 }
 
 #page_accueil {
