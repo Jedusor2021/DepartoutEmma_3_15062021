@@ -1,16 +1,15 @@
 
 #page_accueil
 { 
-   position: absolute;
-   overflow: hidden;
-   animation: page_accueil 4001ms 5000ms;
+    overflow: hidden;
+    animation: page_accueil 0ms $page_accueil-delay both;
 }
 @keyframes page_accueil {
     0% {
         transform: translateX(-9999px);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(0.1);
     }
 }
 

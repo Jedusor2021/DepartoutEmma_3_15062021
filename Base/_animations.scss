@@ -1,24 +1,40 @@
 
 /* Loader page d'accueil*/
-$animation-delay: 5000ms;
+$animation-delay: 4000ms;
 $animation-dur: 150ms;
+$page_accueil-delay: $animation-delay + $animation-dur;
 .chargement {
     width: 100px;
     height: 200px;
+    border-radius: 50%;
     border: 20px solid $cr3-color;
     border-top: 20px solid $cr1-color;
     border-bottom: 20px solid $cr2-color;
     margin: auto;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    animation: spin 1s linear $animation-delay;
+    animation: chargement $animation-delay $animation-dur;
     transform: scaleX(0);
 }
-@keyframes spin {
+@keyframes chargement {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* Animation des blocs menus*/
+.bloc_plat
+{ 
+   animation: bloc_plat 1000ms 3000ms;
+}
+@keyframes bloc_plat {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

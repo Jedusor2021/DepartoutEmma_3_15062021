@@ -28,6 +28,7 @@
 .chargement {
   width: 100px;
   height: 200px;
+  border-radius: 50%;
   border: 20px solid #99E2D0;
   border-top: 20px solid #9356DC;
   border-bottom: 20px solid #FF79DA;
@@ -37,16 +38,29 @@
   bottom: 0;
   left: 0;
   right: 0;
-  animation: spin 1s linear 5000ms;
+  animation: chargement 4000ms 150ms;
   transform: scaleX(0);
 }
 
-@keyframes spin {
+@keyframes chargement {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/* Animation des blocs menus*/
+.bloc_plat {
+  animation: bloc_plat 1000ms 3000ms;
+}
+
+@keyframes bloc_plat {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 #page_accueil {
@@ -161,7 +175,6 @@
   border-radius: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 30px;
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 3px;
@@ -204,9 +217,8 @@ a a-wide {
 }
 
 #page_accueil {
-  position: absolute;
   overflow: hidden;
-  animation: page_accueil 4001ms 5000ms;
+  animation: page_accueil 0ms 4150ms both;
 }
 
 @keyframes page_accueil {
@@ -214,7 +226,7 @@ a a-wide {
     transform: translateX(-9999px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0.1);
   }
 }
 /*loader*/
