@@ -5,22 +5,28 @@
 	background-color: $cr4-color;
 	border-radius: $border-radius1;
 	margin: 10px;
+	width: 100%;
 	.nom_plat {
 		width: 70%;
 }
 }
-.prix 
+.card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 40px;
+	width: 15%;
+	height: 240px;
+}	
+.card i
 {
-	margin-left: 500px;
-	padding-top: 40px;
-}
-
-fa-check-circle
-{
-	margin-left: -99999px;
-	padding-top: 40px;
-}		
-	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 40px;
+	width: 15%;
+	height: 240px;
+}	
 	
 
 

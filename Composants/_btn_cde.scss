@@ -5,6 +5,10 @@
 	flex-direction: row;
 	justify-content: center;
 	height: 45px;
+	&:hover {
+		opacity:lighten($cr2-color, 2);
+		box-shadow: darken($cr6-color, 2);
+	}
 }
 .btn_cde input /* contenu du btn*/
 {
@@ -16,10 +20,7 @@
 	margin-top: nth($margin-top,2);
 	margin-bottom: nth($margin-bottom, 2);
 	width: 40%;
-	&:hover {
-		opacity:lighten($cr2-color, 2);
-		box-shadow: darken($cr6-color, 2);
-	}
+	
 }
 
 

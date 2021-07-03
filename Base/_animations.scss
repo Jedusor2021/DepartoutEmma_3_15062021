@@ -25,19 +25,4 @@ $page_accueil-delay: $animation-delay + $animation-dur;
     }
 }
 
-/* Animation des blocs menus*/
-.bloc_plat
-{
-    animation-name: bloc;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-}
-@keyframes bloc {
-    0% {
-        transform: translate(-200px)
-    }
-    100% {
-        transform: translate(1)
-    }
-}
+/* Animation des coches de choix sur les plats*/
