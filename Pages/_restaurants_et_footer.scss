@@ -17,6 +17,27 @@
 	width: 25%;
 	margin-bottom: -30px;
 	margin-left: 230px;
+	@media (min-width: 769px) {
+		margin-left: 120px;
+		margin-bottom: -40px;
+		
+	}
+}
+.banniere-wide
+{
+	display: flex;
+	opacity: 0;
+	justify-content: center;
+	color: green;
+	z-index: 2;
+	width: 25%;
+	margin-bottom: -30px;
+	margin-left: 230px;
+	@media (min-width: 769px) {
+		margin-left: 120px;
+		margin-bottom: -40px;
+		
+	}
 }
 .restaurant_choix
 {
@@ -28,14 +49,19 @@
 	background-color: $cr4-color;
 	margin-top: nth($margin-top, 2);
 	margin-bottom: nth($margin-bottom, 2);
-	height: 25%;
+	padding-bottom: 5px;
+	height: 55%;
+	width: 92%;
 
 }
 .restaurant_choix img /* object-fit: cover; ne se met que dans les images */
 {
 	border-radius: $border-radius6;
-	height: 130px;
 	object-fit: cover;
+	height: 200px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	z-index: 1;
 }
 .commentaire
@@ -50,4 +76,12 @@
 	display: flex;
 	flex-direction: column;
 	width: 90%;
+}
+.restaurants
+{
+	@media (min-width: 769px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }

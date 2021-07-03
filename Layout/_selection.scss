@@ -19,6 +19,12 @@
 		padding-top: nth($padding-top, 7);
 		font-family: 'roboto';
 		z-index: 1;
+		@media (min-width: 769px) {
+			width: 100%;
+			padding-right: 100px;
+			padding-bottom: 5px;
+			padding-left: 15px;;
+		}
 	}
 	.option-wide {
 	background-color: #D8BFD8;
