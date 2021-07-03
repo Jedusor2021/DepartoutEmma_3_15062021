@@ -38,7 +38,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  animation: chargement 4000ms 150ms;
+  animation: chargement 4000ms 50ms;
   transform: scaleX(0);
 }
 
@@ -52,15 +52,18 @@
 }
 /* Animation des blocs menus*/
 .bloc_plat {
-  animation: bloc_plat 1000ms 3000ms;
+  animation-name: bloc;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
 }
 
-@keyframes bloc_plat {
+@keyframes bloc {
   0% {
-    transform: translateX(-9999px);
+    transform: translate(-200px);
   }
   100% {
-    transform: translateX(0);
+    transform: translate(1);
   }
 }
 #page_accueil {
@@ -135,6 +138,7 @@
   margin-bottom: 20px;
 }
 
+/* bouton bas des pages menus*/
 .btn_cde {
   display: flex;
   flex-direction: row;
@@ -147,17 +151,17 @@
   color: #FFFFFF;
   background-color: #FF79DA;
   border-radius: 30px;
+  box-shadow: solid #F2F2F2;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 40%;
 }
-
-.input {
-  border-radius: 20px;
-  width: 45px;
-  background-color: #FF79DA;
+.btn_cde input:hover {
+  opacity: #ff83dd;
+  box-shadow: #ededed;
 }
 
+/* bouton exploration page d'accueil*/
 .description {
   display: flex;
   flex-direction: column;
@@ -218,7 +222,7 @@ a a-wide {
 
 #page_accueil {
   overflow: hidden;
-  animation: page_accueil 0ms 4150ms both;
+  animation: page_accueil 0ms 4050ms both;
 }
 
 @keyframes page_accueil {
@@ -411,13 +415,17 @@ a a-wide {
   margin: 10px;
 }
 .bloc_plat .nom_plat {
-  width: 90%;
+  width: 70%;
 }
-.bloc_plat .nom_plat .prix {
-  display: flex;
-  flex-direction: row;
-  width: 10%;
-  margin-top: 35px;
+
+.prix {
+  margin-left: 500px;
+  padding-top: 40px;
+}
+
+fa-check-circle {
+  margin-left: -99999px;
+  padding-top: 40px;
 }
 
 /* Descriptif des plats commun aux 4 pages menu */

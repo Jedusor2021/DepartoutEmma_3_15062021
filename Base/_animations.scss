@@ -1,7 +1,7 @@
 
 /* Loader page d'accueil*/
 $animation-delay: 4000ms;
-$animation-dur: 150ms;
+$animation-dur: 50ms;
 $page_accueil-delay: $animation-delay + $animation-dur;
 .chargement {
     width: 100px;
@@ -27,14 +27,17 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 
 /* Animation des blocs menus*/
 .bloc_plat
-{ 
-   animation: bloc_plat 1000ms 3000ms;
+{
+    animation-name: bloc;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
 }
-@keyframes bloc_plat {
+@keyframes bloc {
     0% {
-        transform: translateX(-9999px);
+        transform: translate(-200px)
     }
     100% {
-        transform: translateX(0);
+        transform: translate(1)
     }
 }

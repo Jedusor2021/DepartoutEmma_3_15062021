@@ -1,3 +1,4 @@
+/* bouton bas des pages menus*/
 .btn_cde
 {
 	display: flex;
@@ -5,22 +6,24 @@
 	justify-content: center;
 	height: 45px;
 }
-.btn_cde input
+.btn_cde input /* contenu du btn*/
 {
 	font-family: 'roboto_normal';
 	color: $cr4-color;
 	background-color: $cr2-color;
 	border-radius: $border-radius3;
+	box-shadow: solid $cr6-color;
 	margin-top: nth($margin-top,2);
 	margin-bottom: nth($margin-bottom, 2);
 	width: 40%;
+	&:hover {
+		opacity:lighten($cr2-color, 2);
+		box-shadow: darken($cr6-color, 2);
+	}
 }
-.input 
-{
-	border-radius: $border-radius2;
-	width: 45px;
-	background-color: $cr2-color;
-}
+
+
+/* bouton exploration page d'accueil*/
 .description
 {
 	display: flex;
