@@ -25,4 +25,22 @@ $page_accueil-delay: $animation-delay + $animation-dur;
     }
 }
 
-/* Animation des coches de choix sur les plats*/
+/* Animation des menus sur les plats*/
+.bloc_cat_plat
+{
+    animation-name: mon_anim;
+    animation-duration: 3000ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes mon_anim {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
