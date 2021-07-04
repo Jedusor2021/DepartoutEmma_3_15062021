@@ -6,7 +6,6 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 .chargement {
     width: 100px;
     height: 200px;
-    border-radius: 50%;
     border: 20px solid $cr3-color;
     border-top: 20px solid $cr1-color;
     border-bottom: 20px solid $cr2-color;

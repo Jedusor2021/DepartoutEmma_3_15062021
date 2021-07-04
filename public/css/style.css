@@ -28,7 +28,6 @@
 .chargement {
   width: 100px;
   height: 200px;
-  border-radius: 50%;
   border: 20px solid #99E2D0;
   border-top: 20px solid #9356DC;
   border-bottom: 20px solid #FF79DA;
@@ -355,6 +354,11 @@ a a-wide {
   background-color: #C6C1C1;
   height: 30px;
   border: none;
+}
+@media (min-width: 769px) {
+  .input {
+    width: 300px;
+  }
 }
 
 .champs {
