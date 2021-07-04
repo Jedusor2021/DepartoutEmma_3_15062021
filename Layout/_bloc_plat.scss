@@ -6,13 +6,19 @@
 	border-radius: $border-radius1;
 	margin: 10px;
 	width: 100%;
+}
+.les_menus
+{
 	@media (min-width: 768px) {
-		width: 400px;
+		width: 460px;
+		display: flex;
+		justify-content: space-between;
 	}
 }
-	.nom_plat {
-		width: 70%;
-	}
+
+.nom_plat {
+	width: 70%;
+}
 
 .card {
 	display: flex;

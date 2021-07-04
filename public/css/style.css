@@ -254,6 +254,14 @@ a a-wide {
   flex-direction: column;
   margin-top: 25px;
 }
+@media (min-width: 769px) {
+  .descriptif_plats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+  }
+}
 
 .selection {
   display: flex;
@@ -437,7 +445,16 @@ a a-wide {
   margin: 10px;
   width: 100%;
 }
-.bloc_plat .nom_plat {
+
+@media (min-width: 768px) {
+  .les_menus {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nom_plat {
   width: 70%;
 }
 
