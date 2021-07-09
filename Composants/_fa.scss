@@ -5,15 +5,14 @@
 	width: 10%;
 	@media (min-width: 769px) {
 		padding-top: 5px;
-		padding-left: 10px;
-		width: 5%;
+		width: 40px;
 	}
 }
 .fa-wide {
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 0;
 	margin-top: nth($margin-top, 3);
-	padding-right: nth($padding-right, 4);
+	padding-right: nth($padding-right, 7);
 }
 .fa-around 
 {

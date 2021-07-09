@@ -6,17 +6,19 @@
 	width: 100%;
 	padding-top: nth($padding-top, 7);
 	padding-bottom: nth($padding-bottom, 7);
+	@media (min-width: 769px) {
+		justify-content: flex-start;
+	}
 }
 .logo {
 		margin-right: nth($margin-right, 7);
+		@media (min-width: 769px) {
+			padding-left: 40px;
+		}
 }
-
 .logo image {
 	width: 80%;
 	justify-content: center;
-	@media (min-width: 769px) {
-		justify-content: center;
-	}
 }
 .image img
 {

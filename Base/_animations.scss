@@ -48,13 +48,23 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 .coche
 {
     &:hover {
-        transform: translate(-60px,0);
+        transform: translate(-20px,0);
         transition: transform 2000ms ease-in-out;
     }
 }
 .card1 i:hover {
     opacity: 1;
     transform: rotate(180deg);
-    transition: transform 2000ms ease-in-out;
-    background-color: #008000;
+    transition: transform 500ms ease-in-out;
+}
+.card1:hover {
+    background-color: $cr3-color;
+    border-radius: 0px 5px 5px 0px;
+    height: 80px;
+}
+
+/* Animation sur les coeurs page accueil */
+.fa fa-heart:hover
+{
+    color: $cr3-color(100%);
 }
