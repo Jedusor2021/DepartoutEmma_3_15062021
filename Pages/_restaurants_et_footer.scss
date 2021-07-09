@@ -48,11 +48,12 @@
 	margin-right: nth($margin-right, 3);
 	background-color: $cr4-color;
 	margin-top: nth($margin-top, 2);
-	margin-bottom: nth($margin-bottom, 2);
+	margin-bottom: nth($margin-bottom, 3);
 	padding-bottom: 5px;
-	height: 55%;
 	width: 92%;
-
+	@media (min-width: 769px) {
+		width: 22%;
+	}
 }
 .restaurant_choix img /* object-fit: cover; ne se met que dans les images */
 {

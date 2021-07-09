@@ -25,7 +25,7 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 }
 
 /* Animation des menus sur les plats*/
-.bloc_cat_plat
+.descriptif_plats
 {
     animation-name: mon_anim;
     animation-duration: 3000ms;
@@ -43,3 +43,5 @@ $page_accueil-delay: $animation-delay + $animation-dur;
         opacity: 1;
     }
 }
+
+/* Animation sur les boutons */

@@ -3,6 +3,10 @@
 	font-weight: 1;
 	padding-bottom: 5px;
 	width: 10%;
+	@media (min-width: 769px) {
+		padding-left: 20px;
+		padding-top: 5px;
+	}
 }
 .fa-wide {
 	font-size: 30px;

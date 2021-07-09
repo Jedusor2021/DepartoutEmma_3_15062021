@@ -20,6 +20,9 @@
 		justify-content: space-around;
 		align-items: center;
 		margin-top: nth($margin-top, 1);
+		@media (min-width: 769px) {
+			justify-content: flex-start;
+		}
 }
 
 

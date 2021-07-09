@@ -50,7 +50,7 @@
   }
 }
 /* Animation des menus sur les plats*/
-.bloc_cat_plat {
+.descriptif_plats {
   animation-name: mon_anim;
   animation-duration: 3000ms;
   animation-delay: 500ms;
@@ -68,6 +68,7 @@
     opacity: 1;
   }
 }
+/* Animation sur les boutons */
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -116,7 +117,7 @@
 }
 @media (min-width: 769px) {
   .text {
-    width: 100%;
+    width: 500px;
     padding-left: 10px;
   }
 }
@@ -156,10 +157,6 @@
   justify-content: center;
   height: 45px;
 }
-.btn_cde:hover {
-  opacity: #ff83dd;
-  box-shadow: #ededed;
-}
 
 .btn_cde input {
   font-family: "roboto_normal";
@@ -170,6 +167,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 40%;
+}
+.btn_cde input:hover {
+  background-color: #ff83dd;
+  box-shadow: 2px 2px solid #F2F2F2;
 }
 
 /* bouton exploration page d'accueil*/
@@ -205,6 +206,12 @@
   font-weight: 1;
   padding-bottom: 5px;
   width: 10%;
+}
+@media (min-width: 769px) {
+  .fa {
+    padding-left: 20px;
+    padding-top: 5px;
+  }
 }
 
 .fa-wide {
@@ -271,7 +278,7 @@ a a-wide {
 @media (min-width: 769px) {
   .descriptif_plats {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 30%;
   }
@@ -307,7 +314,7 @@ a a-wide {
 }
 @media (min-width: 769px) {
   .option {
-    width: 30%;
+    width: 50%;
     padding-right: 100px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -373,7 +380,7 @@ a a-wide {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
+    width: 90%;
   }
 }
 
@@ -399,6 +406,11 @@ a a-wide {
   justify-content: space-around;
   align-items: center;
   margin-top: 5px;
+}
+@media (min-width: 769px) {
+  .intitulé_palette {
+    justify-content: flex-start;
+  }
 }
 
 .entete {
@@ -478,7 +490,7 @@ a a-wide {
 
 @media (min-width: 769px) {
   .les_menus {
-    width: 460px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -494,7 +506,6 @@ a a-wide {
   justify-content: center;
   margin-top: 40px;
   width: 15%;
-  height: 240px;
 }
 
 .card i {
@@ -503,7 +514,6 @@ a a-wide {
   justify-content: center;
   margin-top: 40px;
   width: 15%;
-  height: 240px;
 }
 
 /* Descriptif des plats commun aux 4 pages menu */
@@ -558,10 +568,14 @@ a a-wide {
   margin-right: 15px;
   background-color: #FFFFFF;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-bottom: 5px;
-  height: 55%;
   width: 92%;
+}
+@media (min-width: 769px) {
+  .restaurant_choix {
+    width: 22%;
+  }
 }
 
 .restaurant_choix img {
