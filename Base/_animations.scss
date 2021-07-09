@@ -44,4 +44,17 @@ $page_accueil-delay: $animation-delay + $animation-dur;
     }
 }
 
-/* Animation sur les boutons */
+/* Animation sur les coches*/
+.coche
+{
+    &:hover {
+        transform: translate(-60px,0);
+        transition: transform 2000ms ease-in-out;
+    }
+}
+.card1 i:hover {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: transform 2000ms ease-in-out;
+    background-color: #008000;
+}

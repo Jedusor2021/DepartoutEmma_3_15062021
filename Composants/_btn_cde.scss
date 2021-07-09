@@ -5,6 +5,7 @@
 	flex-direction: row;
 	justify-content: center;
 	height: 45px;
+	
 }
 .btn_cde input /* contenu du btn*/
 {
@@ -19,7 +20,10 @@
 	&:hover {
 		background-color:#FFACE2;
 		box-shadow: 10px 5px 5px #E9E1EC;
-}
+	}
+	@media (min-width: 769px){
+		width: 20%;
+	}
 }
 
 /* bouton exploration page d'accueil*/

@@ -68,7 +68,19 @@
     opacity: 1;
   }
 }
-/* Animation sur les boutons */
+/* Animation sur les coches*/
+.coche:hover {
+  transform: translate(-60px, 0);
+  transition: transform 2000ms ease-in-out;
+}
+
+.card1 i:hover {
+  opacity: 1;
+  transform: rotate(180deg);
+  transition: transform 2000ms ease-in-out;
+  background-color: #008000;
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -172,6 +184,11 @@
   background-color: #FFACE2;
   box-shadow: 10px 5px 5px #E9E1EC;
 }
+@media (min-width: 769px) {
+  .btn_cde input {
+    width: 20%;
+  }
+}
 
 /* bouton exploration page d'accueil*/
 .description {
@@ -209,8 +226,9 @@
 }
 @media (min-width: 769px) {
   .fa {
-    padding-left: 20px;
     padding-top: 5px;
+    padding-left: 10px;
+    width: 5%;
   }
 }
 
@@ -242,6 +260,11 @@ a a-wide {
   display: flex;
   justify-content: center;
   font-size: 20px;
+}
+
+.logo_cde img {
+  filter: invert(96%) sepia(96%) saturate(17%) hue-rotate(301deg) brightness(103%) contrast(107%);
+  width: 100px;
 }
 
 #page_accueil {
@@ -449,10 +472,10 @@ a a-wide {
   margin-top: 20px;
   padding-bottom: 30px;
   padding-left: 15px;
+  padding-top: 20px;
   background-color: #000000;
   color: #FFFFFF;
   font-family: "roboto_normal";
-  font-size: 13px;
 }
 .fin_page .propos {
   display: flex;
@@ -482,6 +505,7 @@ a a-wide {
 .bloc_plat {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 10px;
@@ -500,20 +524,23 @@ a a-wide {
   width: 70%;
 }
 
-.card {
+.coche {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 40px;
-  width: 15%;
+  justify-content: flex-end;
+  width: 40px;
 }
 
-.card i {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
+.card {
   margin-top: 40px;
-  width: 15%;
+  width: 20px;
+  padding-right: 5px;
+}
+
+.card1 i {
+  margin-top: 37px;
+  width: 20px;
+  opacity: 0;
 }
 
 /* Descriptif des plats commun aux 4 pages menu */
