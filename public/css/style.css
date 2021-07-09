@@ -288,6 +288,12 @@ a a-wide {
   border-radius: 30px;
   box-shadow: 5px 5px 5px lightgrey;
 }
+@media (min-width: 769px) {
+  .selection {
+    width: 100px;
+    justify-content: flex-start;
+  }
+}
 
 .option {
   display: flex;
@@ -304,7 +310,7 @@ a a-wide {
 }
 @media (min-width: 769px) {
   .option {
-    width: 100%;
+    width: 30%;
     padding-right: 100px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -365,12 +371,12 @@ a a-wide {
   background-color: #C6C1C1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .fonctionnement {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 60%;
   }
 }
 
@@ -473,13 +479,14 @@ a a-wide {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .les_menus {
     width: 460px;
     display: flex;
     justify-content: space-between;
   }
 }
+
 .nom_plat {
   width: 70%;
 }

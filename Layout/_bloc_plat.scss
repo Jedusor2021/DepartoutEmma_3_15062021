@@ -7,9 +7,9 @@
 	margin: 10px;
 	width: 100%;
 }
-@media (min-width: 768px) {
 .les_menus
 {
+	@media (min-width: 769px) {
 	width: 460px;
 	display: flex;
 	justify-content: space-between;
