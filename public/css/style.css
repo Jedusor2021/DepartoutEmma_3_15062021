@@ -163,14 +163,14 @@
   color: #FFFFFF;
   background-color: #FF79DA;
   border-radius: 30px;
-  box-shadow: solid #F2F2F2;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: none;
   width: 40%;
 }
 .btn_cde input:hover {
-  background-color: #ff83dd;
-  box-shadow: 2px 2px solid #F2F2F2;
+  background-color: #FFACE2;
+  box-shadow: 10px 5px 5px #E9E1EC;
 }
 
 /* bouton exploration page d'accueil*/

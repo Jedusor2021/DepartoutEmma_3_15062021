@@ -12,13 +12,13 @@
 	color: $cr4-color;
 	background-color: $cr2-color;
 	border-radius: $border-radius3;
-	box-shadow: solid $cr6-color;
 	margin-top: nth($margin-top,2);
 	margin-bottom: nth($margin-bottom, 2);
+	box-shadow: none;
 	width: 40%;
 	&:hover {
-		background-color:lighten($cr2-color, 2);
-		box-shadow: 2px 2px solid $cr6-color;
+		background-color:#FFACE2;
+		box-shadow: 10px 5px 5px #E9E1EC;
 }
 }
 
