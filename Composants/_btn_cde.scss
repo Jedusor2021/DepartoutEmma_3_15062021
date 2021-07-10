@@ -19,6 +19,7 @@
 	&:hover {
 		background-color:#FFACE2;
 		box-shadow: 3px 5px #888;
+		transition: 1000ms ease-in-out;
 	}
 	@media (min-width: 769px){
 		width: 20%;
@@ -51,7 +52,7 @@
 	&:hover {
 		background-color: #F8BBD0;
 		box-shadow: 3px 8px #888;
-		transition: transform 1000ms ease-out;
+		transition: 1000ms ease-out;
 	}
 }
 .btn_contact a
