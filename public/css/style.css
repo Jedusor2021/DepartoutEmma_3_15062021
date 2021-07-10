@@ -20,8 +20,8 @@
 @font-face {
   font-family: "roboto_bold_italic";
   src: url("Polices/Roboto-BoldItalic.ttf");
-  font-weight: normal;
-  font-style: bold italic;
+  font-weight: bold italique;
+  font-style: normal;
 }
 /* Police*/
 /* Loader page d'accueil*/
@@ -33,10 +33,10 @@
   border-bottom: 20px solid #FF79DA;
   margin: auto;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   animation: chargement 4000ms 50ms;
   transform: scaleX(0);
 }
@@ -309,7 +309,7 @@ a a-wide {
     transform: translateX(-9999px);
   }
   100% {
-    transform: translateX(0.1);
+    transform: translateX(0.1px);
   }
 }
 /*loader*/
@@ -362,7 +362,7 @@ a a-wide {
   border-radius: 10px;
   margin-left: -10px;
   padding-top: 20px;
-  font-family: "roboto";
+  font-family: "Polices/roboto";
   z-index: 1;
 }
 @media (min-width: 769px) {
@@ -515,7 +515,7 @@ a a-wide {
   padding-top: 20px;
   background-color: #000000;
   color: #FFFFFF;
-  font-family: "roboto_normal";
+  font-family: "Polices/roboto_normal";
 }
 .fin_page .propos {
   display: flex;
