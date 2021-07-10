@@ -58,19 +58,3 @@
 {
 	color: $cr4-color;
 }
-
-/* Animation sur les coeurs */
-.fa-heart
-{
-	color: #000;
-	
-}
-.fa-heart::before {
-	content: "\f004";
-	font-weight: bold;
-	transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-	color: red;
-	cursor: pointer;
-}

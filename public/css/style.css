@@ -2,8 +2,8 @@
 @font-face {
   font-family: "roboto";
   src: url("Polices/Roboto-Bold.ttf");
-  font-weight: normal;
-  font-style: bold;
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: "roboto_normal";
@@ -70,7 +70,7 @@
 }
 /* Animation sur les coches*/
 .coche:hover {
-  transform: translate(-20px, 0);
+  transform: translate(-20px, 0px);
   transition: transform 2000ms ease-in-out;
 }
 
@@ -93,9 +93,20 @@
     transform: rotate(180deg);
   }
 }
-/* Animation sur les coeurs page accueil */
-.fa fa-heart:hover {
-  color: #99E2D0 100%;
+/* Animation sur les coeurs */
+.fa-heart {
+  color: #000;
+}
+
+.fa-heart::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: red;
+  cursor: pointer;
 }
 
 .fonctionnement {
@@ -129,7 +140,8 @@
 
 .main_text-wide {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 20px;
   font-size: 20px;
 }
@@ -239,25 +251,8 @@
   color: #FFFFFF;
 }
 
-/* Animation sur les coeurs */
-.fa-heart {
-  color: #000;
-}
-
-.fa-heart::before {
-  content: "";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-
-.fa-heart:hover::before {
-  color: red;
-  cursor: pointer;
-}
-
 /* Bouton bas tte page commander */
 .fa {
-  font-weight: 1;
   padding-bottom: 5px;
   width: 10%;
 }
@@ -270,7 +265,6 @@
 
 .fa-wide {
   font-size: 20px;
-  font-weight: 0;
   margin-top: 15px;
   padding-right: 20px;
 }

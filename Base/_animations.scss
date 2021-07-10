@@ -48,7 +48,7 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 .coche
 {
     &:hover {
-        transform: translate(-20px,0);
+        transform: translate(-20px,0px);
         transition: transform 2000ms ease-in-out;
     }
 }
@@ -71,9 +71,17 @@ $page_accueil-delay: $animation-delay + $animation-dur;
     }
 }
 
-
-/* Animation sur les coeurs page accueil */
-.fa fa-heart:hover
+/* Animation sur les coeurs */
+.fa-heart
 {
-    color: $cr3-color(100%);
+	color: #000;
+}
+.fa-heart::before {
+	content: "\f004";
+	font-weight: bold;
+	transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+	color: red;
+	cursor: pointer;
 }
