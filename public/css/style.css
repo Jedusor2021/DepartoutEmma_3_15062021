@@ -163,7 +163,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769) {
   .text1 {
     display: flex;
     flex-direction: row;
@@ -245,6 +245,7 @@
 .btn_choix input:hover {
   background-color: #F8BBD0;
   box-shadow: 3px 8px #888;
+  transition: transform 1000ms ease-out;
 }
 
 .btn_contact a {
