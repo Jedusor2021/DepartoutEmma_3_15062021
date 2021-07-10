@@ -52,16 +52,25 @@ $page_accueil-delay: $animation-delay + $animation-dur;
         transition: transform 2000ms ease-in-out;
     }
 }
-.card1 i:hover {
-    opacity: 1;
-    transform: rotate(180deg);
-    transition: transform 500ms ease-in-out;
-}
 .card1:hover {
-    background-color: $cr3-color;
-    border-radius: 0px 5px 5px 0px;
-    height: 80px;
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.card1 i:hover {
+    animation: icone $animation-delay $animation-dur;
+    transform: scaleX(0);
+    opacity: 1;
+}
+    
+@keyframes icone {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
 
 /* Animation sur les coeurs page accueil */
 .fa fa-heart:hover

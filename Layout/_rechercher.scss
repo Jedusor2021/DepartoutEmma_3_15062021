@@ -34,4 +34,7 @@
 .champs
 {
 	background-color: $cr8-color;
+	@media (min-width: 769px) {
+		width: 80%;
+	}
 }

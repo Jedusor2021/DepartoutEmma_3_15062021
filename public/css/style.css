@@ -74,18 +74,25 @@
   transition: transform 2000ms ease-in-out;
 }
 
-.card1 i:hover {
-  opacity: 1;
-  transform: rotate(180deg);
-  transition: transform 500ms ease-in-out;
-}
-
 .card1:hover {
-  background-color: #99E2D0;
-  border-radius: 0px 5px 5px 0px;
-  height: 80px;
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.card1 i:hover {
+  animation: icone 4000ms 50ms;
+  transform: scaleX(0);
+  opacity: 1;
+}
+
+@keyframes icone {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 /* Animation sur les coeurs page accueil */
 .fa fa-heart:hover {
   color: #99E2D0 100%;
@@ -109,7 +116,7 @@
 }
 
 .main_text {
-  font-family: "roboto";
+  font-family: "Polices/roboto";
   font-size: 20px;
   padding-top: 10px;
   padding-left: 10px;
@@ -128,7 +135,7 @@
 }
 
 .text {
-  font-family: "roboto_normal";
+  font-family: "Polices/roboto_normal";
   font-size: 15px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -181,7 +188,7 @@
 }
 
 .btn_cde input {
-  font-family: "roboto_normal";
+  font-family: "Polices/roboto_normal";
   color: #FFFFFF;
   background-color: #FF79DA;
   border-radius: 30px;
@@ -192,7 +199,7 @@
 }
 .btn_cde input:hover {
   background-color: #FFACE2;
-  box-shadow: 10px 5px 5px #E9E1EC;
+  box-shadow: 3px 5px #888;
 }
 @media (min-width: 769px) {
   .btn_cde input {
@@ -214,7 +221,7 @@
 .btn_choix input {
   background: #FF79DA;
   color: #FFFFFF;
-  font-family: "roboto_normal";
+  font-family: "Polices/roboto_normal";
   border-radius: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -223,9 +230,29 @@
   padding-top: 3px;
   padding-bottom: 3px;
 }
+.btn_choix input:hover {
+  background-color: #F8BBD0;
+  box-shadow: 3px 8px #888;
+}
 
 .btn_contact a {
   color: #FFFFFF;
+}
+
+/* Animation sur les coeurs */
+.fa-heart {
+  color: #000;
+}
+
+.fa-heart::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: red;
+  cursor: pointer;
 }
 
 /* Bouton bas tte page commander */
@@ -406,6 +433,11 @@ a a-wide {
 .champs {
   background-color: #C6C1C1;
 }
+@media (min-width: 769px) {
+  .champs {
+    width: 80%;
+  }
+}
 
 @media (min-width: 769px) {
   .fonctionnement {
@@ -523,6 +555,7 @@ a a-wide {
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 10px;
+  margin-right: -40px;
   width: 100%;
   z-index: 1;
 }
@@ -543,7 +576,7 @@ a a-wide {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 30px;
+  width: 60px;
   z-index: 2;
 }
 
@@ -554,13 +587,19 @@ a a-wide {
 }
 
 .card1 i {
-  margin-top: 40px;
-  width: 50px;
+  margin-top: 37px;
+  width: 40px;
   opacity: 0;
 }
 
 .card1 {
-  width: 60px;
+  width: 40px;
+  height: 70px;
+  margin-right: -20px;
+  padding-left: 10px;
+  background-color: #99E2D0;
+  opacity: 0;
+  border-radius: 0px 5px 5px 0px;
 }
 
 /* Descriptif des plats commun aux 4 pages menu */
@@ -578,6 +617,7 @@ a a-wide {
   background-color: #99E2D0;
   justify-content: center;
   color: green;
+  position: absolute;
   z-index: 2;
   width: 25%;
   margin-bottom: -30px;
@@ -586,7 +626,7 @@ a a-wide {
 @media (min-width: 769px) {
   .banniere {
     margin-left: 120px;
-    margin-bottom: -40px;
+    width: 10%;
   }
 }
 
@@ -603,7 +643,8 @@ a a-wide {
 @media (min-width: 769px) {
   .banniere-wide {
     margin-left: 120px;
-    margin-bottom: -40px;
+    margin-bottom: 60px;
+    width: 10%;
   }
 }
 
@@ -633,6 +674,11 @@ a a-wide {
   padding-top: 10px;
   padding-bottom: 10px;
   z-index: 1;
+}
+@media (min-width: 769px) {
+  .restaurant_choix img {
+    padding-top: 0;
+  }
 }
 
 .commentaire {
