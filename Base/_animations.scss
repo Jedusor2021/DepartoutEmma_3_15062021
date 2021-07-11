@@ -1,14 +1,14 @@
 
 /* Loader page d'accueil*/
 $animation-delay: 4000ms;
-$animation-dur: 50ms;
+$animation-dur: 100ms;
 $page_accueil-delay: $animation-delay + $animation-dur;
 .chargement {
     width: 100px;
     height: 200px;
-    border: 20px solid $cr3-color;
-    border-top: 20px solid $cr1-color;
-    border-bottom: 20px solid $cr3-color;
+    border: 40px solid $cr3-color;
+    border-top: 40px solid $cr1-color;
+    border-bottom: 40px solid $cr1-color;
     margin: auto;
     position: absolute;
     top: 0px; bottom: 0px; left: 0px; right: 0px;
@@ -17,10 +17,10 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 }
 @keyframes chargement {
     0% {
-        transform: rotateX(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotateX(360deg);
+        transform: rotate(1080deg);
     }
 }
 .chargement2 {
@@ -28,7 +28,7 @@ $page_accueil-delay: $animation-delay + $animation-dur;
     height: 200px;
     border: 10px solid $cr2-color;
     border-top: 10px solid $cr1-color;
-    border-bottom: 10px solid $cr2-color;
+    border-bottom: 10px solid $cr1-color;
     margin: auto;
     position: absolute;
     top: 0px; bottom: 0px; left: 0px; right: 0px;
@@ -40,10 +40,10 @@ $page_accueil-delay: $animation-delay + $animation-dur;
         transform: rotateY(0deg);
     }
     100% {
-        transform: rotateY(180deg);
+        transform: rotateY(1080deg);
     }
 }
-/* Animation des menus sur les plats*/
+/* Animation des menus */
 .descriptif_plats
 {
     animation-name: mon_anim;
@@ -75,5 +75,6 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 }
 .fa-heart:hover::before{
 	color: red;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 	cursor: pointer;
 }
