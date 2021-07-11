@@ -17,13 +17,32 @@ $page_accueil-delay: $animation-delay + $animation-dur;
 }
 @keyframes chargement {
     0% {
-        transform: rotate(0deg);
+        transform: rotateX(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(360deg);
     }
 }
-
+.chargement2 {
+    width: 100px;
+    height: 200px;
+    border: 10px solid $cr2-color;
+    border-top: 10px solid $cr1-color;
+    border-bottom: 10px solid $cr2-color;
+    margin: auto;
+    position: absolute;
+    top: 0px; bottom: 0px; left: 0px; right: 0px;
+    animation: chargement2 $animation-delay $animation-dur;
+    transform: scaleY(0);
+}
+@keyframes chargement2 {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
 /* Animation des menus sur les plats*/
 .descriptif_plats
 {
