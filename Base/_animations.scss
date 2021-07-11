@@ -44,33 +44,6 @@ $page_accueil-delay: $animation-delay + $animation-dur;
     }
 }
 
-/* Animation sur les coches*/
-.coche
-{
-    &:hover {
-        transform: translate(-20px,0px);
-        transition: transform 2000ms ease-in-out;
-    }
-}
-.card1:hover {
-    opacity: 1;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.card1 i:hover {
-    animation: icone $animation-delay $animation-dur;
-    transform: scaleX(0);
-    opacity: 1;
-}
-    
-@keyframes icone {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
-}
-
 /* Animation sur les coeurs */
 .fa-heart
 {

@@ -27,27 +27,59 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	width: 60px;
+	width: 80px;
 	z-index: 2;
 }
 .card {
 	margin-top: 40px;
 	width: 20px;
-	padding-right: 5px;
-}	
-.card1 i
-{
-	margin-top: 37px;
-	width: 40px;
-	opacity: 0;
+	padding-right: 10px;
 }	
 .card1 
 {
-	width: 40px;
+	width: 70px;
 	height:70px;
-	margin-right: -20px;
-	padding-left: 10px;
+	overflow: hidden; /* ce qui dépasse de la coche est invisible*/
+	max-width: 0px; /* la coche est repliée sur elle même*/
 	background-color: $cr3-color;
-	opacity: 0;
 	border-radius: 0px 5px 5px 0px;
+}
+.card1 i {
+	padding-top: 30px;
+	padding-left: 20px;
+	width: 30px;
+}
+.coche > .card:after {
+	margin-left: 22px;
+}
+.coche:hover > .card1 {
+    animation: icone 2s linear forwards;
+}
+@keyframes icone {
+    0% {
+        max-width: -10px;
+    }
+    50% {
+        max-width: 20%;
+    }
+	100% {
+		max-width: 70%;
+	}
+}
+.coche:hover > .card1 i {
+    animation: i 5s linear forwards;
+}
+@keyframes i {
+    0% {
+        transform: rotateY(0deg);
+    }
+    30% {
+        transform: rotateX(25deg);
+    }
+	50% {
+		transform: rotateY(180deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
 }
