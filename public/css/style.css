@@ -561,6 +561,9 @@ a a-wide {
   z-index: 1;
 }
 
+.les_menus {
+  width: 95%;
+}
 @media (min-width: 769px) {
   .les_menus {
     width: 98%;
