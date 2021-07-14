@@ -56,6 +56,9 @@
 	@media (min-width: 769px) {
 		width: 22%;
 	}
+	@media (min-width: 376px) and (max-width: 768px) {
+		margin-left: 30px;
+	}
 }
 .restaurant_choix img /* object-fit: cover; ne se met que dans les images */
 {
