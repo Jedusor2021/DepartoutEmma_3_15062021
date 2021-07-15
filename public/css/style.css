@@ -161,13 +161,13 @@
   .text {
     padding-left: 10px;
     text-overflow: "";
-    overflow: "-";
-    white-space: wrap;
+    overflow: visible;
+    white-space: normal;
     width: 80%;
   }
 }
 
-@media (min-width: 769) {
+@media (min-width: 769px) {
   .text1 {
     display: flex;
     flex-direction: row;
@@ -226,7 +226,7 @@
 .btn_cde input:hover {
   background: #FFACE2;
   box-shadow: 3px 5px #888;
-  transition-timing-function: 500ms linear;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715) linear;
 }
 @media (min-width: 769px) {
   .btn_cde input {
@@ -261,7 +261,7 @@
 .btn_choix input:hover {
   background-color: #F8BBD0;
   box-shadow: 3px 8px #888;
-  transition: 1000ms ease-out;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715) linear;
 }
 
 .btn_contact a {
@@ -630,7 +630,7 @@ a a-wide {
 
 @keyframes icone {
   0% {
-    max-width: -10px;
+    max-width: -10%;
   }
   50% {
     max-width: 20%;
@@ -642,7 +642,7 @@ a a-wide {
 .coche:hover > .card1 i {
   animation: i 2s linear forwards;
   transition: 200ms ease-in-out;
-  transform: scaleX(0deg);
+  transform: scaleX(0);
 }
 
 @keyframes i {

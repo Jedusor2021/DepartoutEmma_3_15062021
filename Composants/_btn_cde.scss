@@ -24,7 +24,7 @@
 	&:hover {
 		background:#FFACE2;
 		box-shadow: 3px 5px #888;
-		transition-timing-function: 500ms linear;
+		transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715) linear;
 	}
 	@media (min-width: 769px){
 		width: 20%;
@@ -58,7 +58,7 @@
 	&:hover {
 		background-color: #F8BBD0;
 		box-shadow: 3px 8px #888;
-		transition: 1000ms ease-out;
+		transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715) linear;
 	}
 }
 .btn_contact a

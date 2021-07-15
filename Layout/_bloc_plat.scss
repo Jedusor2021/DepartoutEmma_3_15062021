@@ -59,7 +59,7 @@
 }
 @keyframes icone {
     0% {
-        max-width: -10px;
+        max-width: -10%;
     }
     50% {
         max-width: 20%;
@@ -71,7 +71,7 @@
 .coche:hover > .card1 i {
 		animation: i 2s linear forwards;
 		transition: 200ms ease-in-out;
-		transform: scaleX(0deg);
+		transform: scaleX(0);
 }
 
 @keyframes i {

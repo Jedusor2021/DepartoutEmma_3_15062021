@@ -33,13 +33,13 @@
 	{
 		padding-left: 10px;
 		text-overflow: "";
-		overflow: "-";
-		white-space: wrap;
+		overflow: visible;
+		white-space: normal;
 		width: 80%;
 	}
 }
 .text1 {
-	@media (min-width: 769) {
+	@media (min-width: 769px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
