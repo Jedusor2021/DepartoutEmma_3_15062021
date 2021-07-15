@@ -443,6 +443,7 @@ a a-wide {
 
 .champs {
   background-color: #C6C1C1;
+  border: 0px;
 }
 @media (min-width: 769px) {
   .champs {
