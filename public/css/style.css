@@ -433,7 +433,7 @@ a a-wide {
   width: 100%;
   background-color: #C6C1C1;
   height: 30px;
-  border: none;
+  border: 0px;
 }
 @media (min-width: 769px) {
   .input {
