@@ -6,22 +6,22 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "roboto_normal";
+  font-family: "roboto";
   src: url("Polices/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Shrikhand";
+  font-family: "shrikhand";
   src: url("Polices/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "roboto_bold_italic";
+  font-family: "roboto";
   src: url("Polices/Roboto-BoldItalic.ttf");
-  font-weight: bold italique;
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic;
 }
 /* Police*/
 /* Loader page d'accueil*/
@@ -147,7 +147,8 @@
 }
 
 .text {
-  font-family: "Polices/roboto_normal";
+  font-family: "Polices/roboto";
+  font-weight: bold;
   font-size: 15px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -158,8 +159,11 @@
 }
 @media (min-width: 769px) {
   .text {
-    width: 500px;
     padding-left: 10px;
+    text-overflow: "";
+    overflow: "-";
+    white-space: wrap;
+    width: 80%;
   }
 }
 
@@ -179,12 +183,12 @@
 
 /* Texte avec police ROBOTO (gras) et ROBOTO NORMAL */
 .intitulé {
-  font-family: "Roboto";
+  font-family: "Polices/Roboto";
   font-size: 25px;
 }
 
 .intitule {
-  font-family: "Shrikhand";
+  font-family: "Polices/shrikhand";
   font-size: 25px;
   margin-top: 20px;
   margin-left: 15px;
@@ -205,19 +209,24 @@
 }
 
 .btn_cde input {
-  font-family: "Polices/roboto_normal";
+  font-family: "Polices/roboto";
+  font-weight: bold;
   color: #FFFFFF;
-  background-color: #FF79DA;
-  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-radius: 50px;
   box-shadow: none;
-  width: 40%;
+  width: 30%;
 }
 .btn_cde input:hover {
-  background-color: #FFACE2;
+  background: #FFACE2;
   box-shadow: 3px 5px #888;
-  transition: 1000ms ease-in-out;
+  transition-timing-function: 500ms linear;
 }
 @media (min-width: 769px) {
   .btn_cde input {
@@ -237,16 +246,17 @@
 }
 
 .btn_choix input {
-  background: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: #FFFFFF;
-  font-family: "Polices/roboto_normal";
+  font-family: "Polices/roboto";
+  font-weight: bold;
   border-radius: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .btn_choix input:hover {
   background-color: #F8BBD0;
@@ -374,10 +384,10 @@ a a-wide {
 }
 @media (min-width: 769px) {
   .option {
-    width: 50%;
-    padding-right: 100px;
+    padding-right: 10px;
     padding-bottom: 5px;
     padding-left: 15px;
+    width: 90%;
   }
 }
 
@@ -522,7 +532,8 @@ a a-wide {
   padding-top: 20px;
   background-color: #000000;
   color: #FFFFFF;
-  font-family: "Polices/roboto_normal";
+  font-family: "Polices/roboto";
+  font-weight: bold;
 }
 .fin_page .propos {
   display: flex;
@@ -605,6 +616,7 @@ a a-wide {
   padding-top: 30px;
   padding-left: 20px;
   width: 30px;
+  color: #FFF;
 }
 
 .coche > .card:after {
@@ -612,7 +624,7 @@ a a-wide {
 }
 
 .coche:hover > .card1 {
-  animation: icone 2s linear forwards;
+  animation: icone 0.5s linear forwards;
 }
 
 @keyframes icone {
@@ -627,21 +639,20 @@ a a-wide {
   }
 }
 .coche:hover > .card1 i {
-  animation: i 5s linear forwards;
+  animation: i 2s linear forwards;
+  transition: 200ms ease-in-out;
+  transform: scaleX(0deg);
 }
 
 @keyframes i {
   0% {
-    transform: rotateY(0deg);
-  }
-  30% {
-    transform: rotateX(25deg);
+    transform: rotateZ(-0.25turn);
   }
   50% {
-    transform: rotateY(180deg);
+    transform: rotateZ(0turn);
   }
   100% {
-    transform: rotateX(0deg);
+    transform: rotateZ(0.25turn);
   }
 }
 /* Descriptif des plats commun aux 4 pages menu */
@@ -741,6 +752,10 @@ a a-wide {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+body {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

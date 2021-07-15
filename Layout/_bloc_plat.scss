@@ -49,12 +49,13 @@
 	padding-top: 30px;
 	padding-left: 20px;
 	width: 30px;
+	color: #FFF;
 }
 .coche > .card:after {
 	margin-left: 22px;
 }
 .coche:hover > .card1 {
-    animation: icone 2s linear forwards;
+    animation: icone 0.5s linear forwards;
 }
 @keyframes icone {
     0% {
@@ -68,19 +69,19 @@
 	}
 }
 .coche:hover > .card1 i {
-    animation: i 5s linear forwards;
+		animation: i 2s linear forwards;
+		transition: 200ms ease-in-out;
+		transform: scaleX(0deg);
 }
+
 @keyframes i {
-    0% {
-        transform: rotateY(0deg);
-    }
-    30% {
-        transform: rotateX(25deg);
-    }
+	0% {
+		transform: rotateZ(-0.25turn);
+	}
 	50% {
-		transform: rotateY(180deg);
+		transform: rotateZ(0turn);
 	}
 	100% {
-		transform: rotateX(0deg);
+		transform: rotateZ(0.25turn);
 	}
 }

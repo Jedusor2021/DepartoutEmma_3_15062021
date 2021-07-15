@@ -8,18 +8,23 @@
 }
 .btn_cde input /* contenu du btn*/
 {
-	font-family: 'Polices/roboto_normal';
+	font-family: 'Polices/roboto';
+	font-weight: bold;
 	color: $cr4-color;
-	background-color: $cr2-color;
-	border-radius: $border-radius3;
-	margin-top: nth($margin-top,2);
+	background: linear-gradient($cr2-color, $cr1-color);
+	margin-top:nth($margin-top, 2);
 	margin-bottom: nth($margin-bottom, 2);
+	padding-right: nth($padding-right, 7);
+	padding-left: nth($padding-left, 7);
+	padding-top: nth($padding-top, 5);
+	padding-bottom: nth($padding-bottom, 8);
+	border-radius: 50px;
 	box-shadow: none;
-	width: 40%;
+	width: 30%;
 	&:hover {
-		background-color:#FFACE2;
+		background:#FFACE2;
 		box-shadow: 3px 5px #888;
-		transition: 1000ms ease-in-out;
+		transition-timing-function: 500ms linear;
 	}
 	@media (min-width: 769px){
 		width: 20%;
@@ -39,16 +44,17 @@
 }
 .btn_choix input
 {
-	background: $cr2-color;
+	background: linear-gradient($cr2-color, $cr1-color);
 	color: $cr4-color;
-	font-family: 'Polices/roboto_normal';
+	font-family: 'Polices/roboto';
+	font-weight: bold;
 	border-radius: $border-radius3;
 	margin-top:nth($margin-top, 2);
 	margin-bottom: nth($margin-bottom, 2);
-	padding-right: nth($padding-right, 6);
-	padding-left: nth($padding-left, 6);
-	padding-top: nth($padding-top, 3);
-	padding-bottom: nth($padding-bottom, 3);
+	padding-right: nth($padding-right, 7);
+	padding-left: nth($padding-left, 7);
+	padding-top: nth($padding-top, 5);
+	padding-bottom: nth($padding-bottom, 5);
 	&:hover {
 		background-color: #F8BBD0;
 		box-shadow: 3px 8px #888;
