@@ -641,7 +641,6 @@ a a-wide {
   animation: i 2s linear forwards;
   transition: 200ms ease-in-out;
   transform: scaleX(0);
-  border: 1px solid green;
 }
 
 @keyframes i {
