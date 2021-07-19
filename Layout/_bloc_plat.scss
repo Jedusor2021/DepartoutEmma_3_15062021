@@ -75,12 +75,12 @@
 
 @keyframes i {
 	0% {
-		transform: rotateZ(-0.25turn);
-	}
-	50% {
 		transform: rotateZ(0turn);
 	}
+	50% {
+		transform: rotateZ(0.15turn);
+	}
 	100% {
-		transform: rotateZ(0.25turn);
+		transform: rotateZ(0.18turn);
 	}
 }
