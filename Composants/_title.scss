@@ -1,5 +1,5 @@
 .main_text {
-    font-family:'Polices/roboto';
+    font-family:'roboto';
     font-size: 20px;
     padding-top: nth($padding-top, 5);
     padding-left: nth($padding-left, 5);
@@ -9,7 +9,6 @@
     white-space: nowrap;
     width: 70%;
 }
-
 .main_text-wide 
 {
         display: flex;
@@ -20,7 +19,7 @@
 }
 .text /* Sous titres des plats et localisation des restaurants */
 {
-	font-family: 'Polices/roboto';
+	font-family: 'roboto';
 	font-weight: bold;
 	font-size: 15px;
 	padding-bottom: nth($padding-bottom, 5);
@@ -54,13 +53,13 @@
 /* Texte avec police ROBOTO (gras) et ROBOTO NORMAL */
 .intitulé /* Restaurants et fonctionnements */
 {
-	font-family:'Polices/Roboto';
+	font-family:'roboto';
 	font-size: 25px;
 }
 
-.h2 
+h2 
 {
-	font-family:'Polices/shrikhand';
+	font-family:'Shrikhand';
 	font-size: 25px;
 	margin-top: nth($margin-top, 4);
 	margin-left: nth($margin-left, 3);
