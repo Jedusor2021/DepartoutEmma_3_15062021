@@ -8,7 +8,7 @@
 }
 .btn_cde input /* contenu du btn*/
 {
-	font-family: 'Polices/roboto';
+	font-family: 'roboto';
 	font-weight: bold;
 	color: $cr4-color;
 	background: linear-gradient($cr2-color, $cr1-color);
@@ -46,7 +46,7 @@
 {
 	background: linear-gradient($cr2-color, $cr1-color);
 	color: $cr4-color;
-	font-family: 'Polices/roboto';
+	font-family: 'roboto';
 	font-weight: bold;
 	border-radius: $border-radius3;
 	margin-top:nth($margin-top, 2);
