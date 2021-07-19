@@ -43,12 +43,11 @@
 	overflow: hidden; /* ce qui dépasse de la coche est invisible*/
 	max-width: 0px; /* la coche est repliée sur elle même*/
 	background-color: $cr3-color;
-	border-radius: 0px 5px 5px 0px;
 }
 .card1 i {
 	padding-top: 30px;
 	padding-left: 20px;
-	width: 30px;
+	width: 10px;
 	color: #FFF;
 }
 .coche > .card:after {
